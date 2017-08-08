@@ -13,4 +13,11 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
+
+Auth::routes();
+
+Route::get('/home', 'PagesController@index')->name('home');
+Route::get('/news', 'PagesController@indexNews')->name('news');
+Route::get('/encyclopedia', 'PagesController@indexEncyclopedia')->name('encyclopedia');
+Route::get('/blogs', 'PagesController@indexBlogs')->name('blogs');

@@ -1,0 +1,41 @@
+.main-header {
+  letter-spacing: 4px;
+  padding: 0;
+  margin: 20px 0 5px 10px;
+}
+
+.separator-main {
+  border-bottom: 1px dashed #bf360c;
+  margin-bottom: 10px;
+}
+
+.separator-secondary {
+  border-bottom: 1px solid #e0f2f1;
+  margin-bottom: 10px;
+}
+
+.separator-secondary-en {
+  border-bottom: 1px solid #fff3e0;
+  margin-bottom: 10px;
+}
+
+.alphabet-link {
+  padding: 0 15px;
+  border-right: 1px solid white;
+  font-size: 20px;
+}
+
+.alphabet-link:hover {
+  background: #fb8c00;
+  border-radius: 10%;
+}
+
+.blog-author {
+  font-size: 0.8em;
+  display: block;
+}
+
+.slide-menu-text {
+  display:block;
+  text-transform: uppercase;
+}

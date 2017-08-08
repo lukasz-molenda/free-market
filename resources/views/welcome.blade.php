@@ -1,95 +1,113 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+@section('content')
+  <div class="container">
+    <div class="row">
+      <h4 class="main-header deep-orange-text text-darken-4 m-l-10 m-t-20">Wiadomości</h4>
+    </div>
+    <div class="separator-main"></div>
+    <div class="row">
+      <div class="col l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="{{asset('images/01.jpg')}}">
+            <span class="card-title">Pierwsza Wiadomość</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Czytaj dalej</a>
+          </div>
         </div>
-    </body>
-</html>
+      </div>
+      <div class="col l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="{{asset('images/02.jpg')}}">
+            <span class="card-title">Druga Wiadomość</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Czytaj dalej</a>
+          </div>
+        </div>
+      </div>
+      <div class="col l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="{{asset('images/03.jpg')}}">
+            <span class="card-title">Trzecia Wiadomość</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Czytaj dalej</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l4">
+        <h4 class="main-header deep-orange-text text-darken-4 m-l-10 m-t-20">Encyklopedia</h4>
+      </div>
+      <div class="col l4">
+        <h4 class="main-header deep-orange-text text-darken-4 m-l-10 m-t-20">Blog</h4>
+      </div>
+    </div>
+    <div class="separator-main"></div>
+    <div class="row">
+      <div class="col l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="{{asset('images/04.jpg')}}">
+            <span class="card-title">Pierwszy Wpis</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Czytaj dalej</a>
+          </div>
+        </div>
+      </div>
+      <div class="col l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="{{asset('images/05.jpg')}}">
+            <span class="card-title">Pierwszy Wpis</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Czytaj dalej</a>
+          </div>
+        </div>
+      </div>
+      <div class="col l4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img src="{{asset('images/06.jpg')}}">
+            <span class="card-title">Drugi Wpis</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.
+            I am convenient because I require little markup to use effectively.</p>
+          </div>
+          <div class="card-action">
+            <a href="#">Czytaj dalej</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+@endsection
