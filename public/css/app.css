@@ -12916,14 +12916,26 @@ input {
 }
 
 .side-nav {
-  /*-webkit-transform: translateX(0%) !important;
-          transform: translateX(0%) !important;*/
+  -webkit-transform: translateX(0%) !important;
+  transform: translateX(0%) !important;
+  width: 15% !important;
+  position: absolute !important;
+  height: 50% !important;
+  top: 4.4rem;
+  bottom: 0;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .card-blog {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   font-size: 1em !important;
+}
+
+.nav-wrapper {
+  padding: 0 !important;
 }
 
 .m-t-5 {
@@ -13313,7 +13325,7 @@ input {
 .main-header {
   letter-spacing: 4px;
   padding: 0;
-  margin: 20px 0 5px 10px;
+  margin: 50px 0 5px 0px !important;
 }
 
 .separator-main {
@@ -13350,5 +13362,21 @@ input {
 .slide-menu-text {
   display: block;
   text-transform: uppercase;
+}
+
+.edit-user-password {
+  display: none;
+}
+
+#manual:checked ~ .edit-user-password {
+  display: block;
+}
+
+#auto-generate:checked ~ #password {
+  display: none;
+}
+
+.header {
+  margin-top: 50px;
 }
 

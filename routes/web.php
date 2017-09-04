@@ -21,3 +21,11 @@ Route::get('/home', 'PagesController@index')->name('home');
 Route::get('/news', 'PagesController@indexNews')->name('news');
 Route::get('/encyclopedia', 'PagesController@indexEncyclopedia')->name('encyclopedia');
 Route::get('/blogs', 'PagesController@indexBlogs')->name('blogs');
+
+Route::prefix('manage')->middleware('role:superadministrator|administrator|newsman|bloger|writer')->group(function() {
+  Route::get('/', 'ManageController@index');
+  Route::get('/dashboard', 'ManageController@dashboard')->name('manage.dashboard');
+  Route::resource('/users', 'UsersController');
+  Route::resource('/permissions', 'PermissionsController', ['except' => 'destroy']);
+  Route::resource('/roles', 'RolesController', ['except' => 'destroy']);
+});

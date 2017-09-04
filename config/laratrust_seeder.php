@@ -14,6 +14,15 @@ return [
         'user' => [
             'profile' => 'r,u'
         ],
+        'newsman' => [
+            'profile' => 'r,u'
+        ],
+        'bloger' => [
+            'profile' => 'r,u'
+        ],
+        'writer' => [
+            'profile' => 'r,u'
+        ],
     ],
     'permission_structure' => [
         'cru_user' => [

@@ -2,8 +2,6 @@
 
 @section('content')
 
-@include('layouts.inc.slide-menu')
-
 <div class="container">
   <div class="row">
     <h4 class="main-header deep-orange-text text-darken-4">Blogi</h4>

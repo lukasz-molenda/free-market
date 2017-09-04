@@ -40,6 +40,7 @@
 
 
     </div>
+    @yield('scripts')
   @include('layouts.inc.footer')
 
 </body>

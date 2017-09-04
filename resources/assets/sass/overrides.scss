@@ -13,12 +13,23 @@ input {
 }
 
 .side-nav {
-  /*-webkit-transform: translateX(0%) !important;
-          transform: translateX(0%) !important;*/
+  -webkit-transform: translateX(0%) !important;
+          transform: translateX(0%) !important;
+  width: 15% !important;
+  position: absolute !important;
+  height: 50% !important;
+  top: 4.4rem;
+  bottom: 0;
+  border: none;
+  box-shadow: none;
 }
 
 .card-blog {
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   font-size: 1em !important;
+}
+
+.nav-wrapper {
+  padding: 0 !important;
 }

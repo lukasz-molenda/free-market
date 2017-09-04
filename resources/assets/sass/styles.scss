@@ -1,7 +1,7 @@
 .main-header {
   letter-spacing: 4px;
   padding: 0;
-  margin: 20px 0 5px 10px;
+  margin: 50px 0 5px 0px !important;
 }
 
 .separator-main {
@@ -38,4 +38,20 @@
 .slide-menu-text {
   display:block;
   text-transform: uppercase;
+}
+
+.edit-user-password {
+  display: none;
+}
+
+#manual:checked ~ .edit-user-password {
+  display: block;
+}
+
+#auto-generate:checked ~ #password {
+  display: none;
+}
+
+.header {
+  margin-top: 50px;
 }
